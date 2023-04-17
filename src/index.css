@@ -5,9 +5,10 @@
   #root,
   .app,
   .content {
-    height: 100%;
-    width: 100%;
+    height: 1000px;
+    width: 1300px;
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ecebeb;
   }
 
   .app {

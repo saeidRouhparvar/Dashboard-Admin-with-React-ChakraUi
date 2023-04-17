@@ -8,7 +8,7 @@ function App() {
   let router = useRoutes(routes);
   return (
     <Box>
-      <TopBar />
+      <TopBar/>
       {router}
     </Box>
   );
