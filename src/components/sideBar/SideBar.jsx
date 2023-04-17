@@ -8,7 +8,7 @@ import {
   RiMailCheckLine,
   RiChat4Line,
   RiBriefcase2Line,
-  RiStackLine
+  RiStackLine,
 } from "react-icons/ri";
 import {
   Box,
@@ -20,6 +20,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function SideBar() {
   const menuStyle = {
@@ -30,7 +31,7 @@ export default function SideBar() {
     ":active": {
       bg: "gray.500",
     },
-    "cursor":"pointer"
+    cursor: "pointer",
   };
   return (
     <Box bg="gray.600" p="10px" color={"white"}>
@@ -40,12 +41,14 @@ export default function SideBar() {
             Dashboard
           </Text>
           <List m={2} fontSize={18}>
-            <ListItem  sx={menuStyle} ps={2}>
-              <HStack>
-                <RiAncientPavilionLine />
-                <Text p={1}>Home</Text>
-              </HStack>
-            </ListItem>
+            <Link to="/">
+              <ListItem sx={menuStyle} ps={2}>
+                <HStack>
+                  <RiAncientPavilionLine />
+                  <Text p={1}>Home</Text>
+                </HStack>
+              </ListItem>
+            </Link>
             <ListItem sx={menuStyle} ps={2}>
               <HStack fontSize={18}>
                 <RiLineChartFill />
@@ -65,24 +68,30 @@ export default function SideBar() {
             Quick Menu
           </Text>
           <List m={2} fontSize={18}>
-            <ListItem  sx={menuStyle} ps={2}>
-              <HStack>
-                <RiAccountBoxLine />
-                <Text p={1}>Users</Text>
-              </HStack>
-            </ListItem>
-            <ListItem sx={menuStyle} ps={2}>
-              <HStack fontSize={18}>
-                <RiAccountBoxLine />
-                <Text  p={1}>New User</Text>
-              </HStack>
-            </ListItem>
-            <ListItem sx={menuStyle} ps={2}>
-              <HStack>
-                <RiBuilding2Fill />
-                <Text p={1}>Products</Text>
-              </HStack>
-            </ListItem>
+            <Link to="/users">
+              <ListItem sx={menuStyle} ps={2}>
+                <HStack>
+                  <RiAccountBoxLine />
+                  <Text p={1}>Users</Text>
+                </HStack>
+              </ListItem>
+            </Link>
+            <Link to="/newUser">
+              <ListItem sx={menuStyle} ps={2}>
+                <HStack fontSize={18}>
+                  <RiAccountBoxLine />
+                  <Text p={1}>New User</Text>
+                </HStack>
+              </ListItem>
+            </Link>
+            <Link to="/products">
+              <ListItem sx={menuStyle} ps={2}>
+                <HStack>
+                  <RiBuilding2Fill />
+                  <Text p={1}>Products</Text>
+                </HStack>
+              </ListItem>
+            </Link>
             <ListItem sx={menuStyle} ps={2}>
               <HStack>
                 <RiLineChartLine />
@@ -102,7 +111,7 @@ export default function SideBar() {
             Notifications
           </Text>
           <List m={2} fontSize={18}>
-            <ListItem  sx={menuStyle} ps={2}>
+            <ListItem sx={menuStyle} ps={2}>
               <HStack>
                 <RiMailCheckLine />
                 <Text p={1}>Mail</Text>
@@ -127,7 +136,7 @@ export default function SideBar() {
             Staff
           </Text>
           <List m={2} fontSize={18}>
-            <ListItem  sx={menuStyle} ps={2}>
+            <ListItem sx={menuStyle} ps={2}>
               <HStack>
                 <RiBriefcase2Line />
                 <Text p={1}>Manage</Text>
