@@ -16,14 +16,14 @@ export default function TopBar() {
     <Flex
       h="60px"
       bg="white"
-      mx="30px"
+      ms="30px"
       my='20px'
       rounded="10px"
       justifyContent={"space-between"}
       alignItems={"center"}
       position="sticky"
     >
-      <Box ms={8} bg="white">
+      <Box w='60%' ms={8} bg="white">
         <InputGroup>
           <InputLeftElement
             pointerEvents="none"

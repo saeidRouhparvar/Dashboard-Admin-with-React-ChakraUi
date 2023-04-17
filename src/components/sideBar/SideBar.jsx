@@ -34,7 +34,7 @@ export default function SideBar() {
     cursor: "pointer",
   };
   return (
-    <Box bg="gray.600" p="10px" color={"white"}>
+    <Box bg="gray.600" p="10px" color={"white"} position={"sticky"}>
       <Flex flexDirection="column" m={4}>
         <Flex flexDirection="column" mb={3}>
           <Text fontSize={20} color="gray.400">
