@@ -9,7 +9,7 @@ function App() {
   let router = useRoutes(routes);
   return (
     <Grid
-      templateRows="repeat(2, 1fr)"
+      templateRows="repeat(1, 1fr)"
       templateColumns="repeat(12, 1fr)"
     >
       <GridItem colSpan={3}>

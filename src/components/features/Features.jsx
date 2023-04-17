@@ -1,15 +1,20 @@
-import { Box, Flex, HStack, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  HStack,
+  Text
+} from "@chakra-ui/react";
 import React from "react";
 import { RiArrowDownLine, RiArrowUpLine } from "react-icons/ri";
 
 export default function Features() {
   return (
-    <Flex w={'100%'} mt={6} justifyContent={'space-between'}>
+    <Flex w={"100%"} mt={6} justifyContent={"space-between"} flexWrap>
       <Box
         flexDirection={"column"}
         ps={6}
         py={6}
-      w={'31%'}
+        w={"31%"}
         boxShadow={"0 0 15px -10px rgba(0,0,0,.75)"}
         rounded={8}
       >
@@ -31,7 +36,7 @@ export default function Features() {
         flexDirection={"column"}
         ps={6}
         py={6}
-      w={'31%'}
+        w={"31%"}
         boxShadow={"0 0 15px -10px rgba(0,0,0,.75)"}
         rounded={8}
       >
@@ -53,7 +58,7 @@ export default function Features() {
         flexDirection={"column"}
         ps={6}
         py={6}
-      w={'31%'}
+        w={"31%"}
         boxShadow={"0 0 15px -10px rgba(0,0,0,.75)"}
         rounded={8}
       >
@@ -71,7 +76,6 @@ export default function Features() {
           Compared to last month
         </Text>
       </Box>
-
     </Flex>
   );
 }
