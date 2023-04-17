@@ -53,29 +53,68 @@ let xAxisYData = [
 
 let newMembers = [
     {
-        id:1,
-        userName:'Saeid Rouhparvar',
+        id: 1,
+        userName: 'Saeid Rouhparvar',
         title: 'Front End Developer',
-        img:''
+        img: ''
     },
     {
-        id:2,
-        userName:'Ayhan Rouhparvar',
+        id: 2,
+        userName: 'Ayhan Rouhparvar',
         title: 'AI Developer',
-        img:''
+        img: ''
     },
     {
-        id:3,
-        userName:'Zahra Ramooz',
+        id: 3,
+        userName: 'Zahra Ramooz',
         title: 'Front End Developer',
+        img: ''
+    },
+    {
+        id: 4,
+        userName: 'Bita Amjadi',
+        title: 'UI Designer',
+        img: ''
+    },
+]
+
+let transActions = [
+    {
+        id: 1,
+        userName: 'Farhad Razzaghi',
+        date: '14 Feb 2022',
+        amount: 345, 
+        status: 'Declined',
+        color:'red',
         img:''
     },
     {
-        id:4,
-        userName:'Bita Amjadi',
-        title: 'UI Designer',
+        id: 2,
+        userName: 'Farzin Ghadimi',
+        date: '30 Jul 2020',
+        amount: 149, 
+        status: 'Approved',
+        color:'green',
+        img:''
+    },
+    {
+        id: 3,
+        userName: 'Reaz Aghae',
+        date: '24 Jun 2022',
+        amount: 345, 
+        status: 'Declined',
+        color:'red',
+        img:''
+    },
+    {
+        id: 4,
+        userName: 'Elahe Mehri',
+        date: '18 Oct 2019',
+        amount: 235, 
+        status: 'Approved',
+        color:'green',
         img:''
     },
 ]
-export { xAxisMData,xAxisYData,newMembers }
-export {  }
+
+export { xAxisMData, xAxisYData, newMembers,transActions }

@@ -6,6 +6,7 @@ import { newMembers } from "../../datas";
 export default function widgetSm() {
   return (
     <Flex
+    w='35%'
       my={12}
       p={6}
       flexDirection={"column"}
@@ -18,7 +19,7 @@ export default function widgetSm() {
         <Flex justifyContent={"space-between"} mb={8}>
           <Avatar />
           <VStack>
-            <Text fontSize={20}>{member.userName}</Text>
+            <Text fontSize={18}>{member.userName}</Text>
             <Text m={'0 !important'} fontSize={14} color={"gray.500"}>
               {member.title}
             </Text>
