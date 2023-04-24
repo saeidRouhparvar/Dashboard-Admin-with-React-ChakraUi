@@ -117,4 +117,46 @@ let transActions = [
     },
 ]
 
-export { xAxisMData, xAxisYData, newMembers,transActions }
+let userRow = [
+    {
+        id:1,
+        username:'Saeid Rouhparvar',
+        avatar:'',
+        status:'active',
+        transaction: '$114'
+
+    },
+    {
+        id:2,
+        username:'Vahid Rouhparvar',
+        avatar:'',
+        status:'active',
+        transaction: '$342'
+
+    },
+    {
+        id:3,
+        username:'Ayhan Rouhparvar',
+        avatar:'',
+        status:'active',
+        transaction: '$65'
+
+    },
+    {
+        id:4,
+        username:'Farid Rouhparvar',
+        avatar:'',
+        status:'active',
+        transaction: '$14'
+
+    },
+    {
+        id:5,
+        username:'Zahra Rouhparvar',
+        avatar:'',
+        status:'active',
+        transaction: '$514'
+
+    },
+]
+export { xAxisMData, xAxisYData, newMembers,transActions,userRow }

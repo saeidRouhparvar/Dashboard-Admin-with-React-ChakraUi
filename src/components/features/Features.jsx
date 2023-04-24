@@ -1,9 +1,4 @@
-import {
-  Box,
-  Flex,
-  HStack,
-  Text
-} from "@chakra-ui/react";
+import { Box, Flex, HStack, Grid, Text, GridItem } from "@chakra-ui/react";
 import React from "react";
 import { RiArrowDownLine, RiArrowUpLine } from "react-icons/ri";
 

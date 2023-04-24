@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import Features from "../../components/features/Features";
 import Chart from "../../components/chart/Chart";
@@ -14,7 +14,7 @@ export default function Home() {
         <Chart grid title="Month Sale" data={xAxisMData} dataKey="Sale" />
         <Chart grid title="Year Sale" data={xAxisYData} dataKey="Sale" />
       </Flex>
-      <Flex justifyContent={'space-between'}>
+      <Flex justifyContent={"space-between"}>
         <WidgetSm />
         <WidgetLg />
       </Flex>
