@@ -123,7 +123,9 @@ let userRow = [
         username:'Saeid Rouhparvar',
         avatar:'',
         status:'active',
-        transaction: '$114'
+        transaction: '$114',
+        email:'sR@gmail.com',
+
 
     },
     {
@@ -131,7 +133,9 @@ let userRow = [
         username:'Vahid Rouhparvar',
         avatar:'',
         status:'active',
-        transaction: '$342'
+        transaction: '$342',
+        email:'vR@gmail.com'
+
 
     },
     {
@@ -139,7 +143,9 @@ let userRow = [
         username:'Ayhan Rouhparvar',
         avatar:'',
         status:'active',
-        transaction: '$65'
+        transaction: '$65',
+        email:'aR@gmail.com'
+
 
     },
     {
@@ -147,16 +153,46 @@ let userRow = [
         username:'Farid Rouhparvar',
         avatar:'',
         status:'active',
-        transaction: '$14'
+        transaction: '$14',
+        email:'fR@gmail.com'
+
 
     },
     {
         id:5,
         username:'Zahra Rouhparvar',
-        avatar:'',
+        // avatar:'',
         status:'active',
-        transaction: '$514'
+        transaction: '$514',
+        email:'zR@gmail.com'
 
     },
 ]
-export { xAxisMData, xAxisYData, newMembers,transActions,userRow }
+let products = [
+    {
+        id:1,
+        title:'Asus',
+        price:'$234'
+    },
+    {
+        id:2,
+        title:'MacBook',
+        price:'$534'
+    },
+    {
+        id:3,
+        title:'Lenovo',
+        price:'$134'
+    },
+    {
+        id:4,
+        title:'HP',
+        price:'$434'
+    },
+    {
+        id:5,
+        title:'Surface',
+        price:'$734'
+    },
+]
+export { xAxisMData, xAxisYData, newMembers,transActions,userRow,products }
