@@ -195,4 +195,27 @@ let products = [
         price:'$734'
     },
 ]
-export { xAxisMData, xAxisYData, newMembers,transActions,userRow,products }
+
+let productsData = [
+    {
+       name: 'Feb',
+       sale: '323'
+
+    },
+    {
+       name: 'Jon',
+       sale: '233'
+
+    },
+    {
+       name: 'Oct',
+       sale: '203'
+
+    },
+    {
+       name: 'Mar',
+       sale: '215'
+
+    },
+]
+export { xAxisMData, xAxisYData, newMembers,transActions,userRow,products,productsData }

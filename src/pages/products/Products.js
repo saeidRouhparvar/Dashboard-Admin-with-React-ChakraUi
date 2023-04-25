@@ -19,10 +19,10 @@ import {
 } from "@chakra-ui/react";
 import { DeleteIcon } from "@chakra-ui/icons";
 
-export default function UserList(params) {
-  const [productDatas, setUserDatas] = useState(userRow);
+export default function Products() {
+  const [productDatas, setProductDatas] = useState(products);
   const productDelete = productID => {
-    setUserDatas(productDatas.filter(product => product.id != productID))
+    setProductDatas(productDatas.filter(product => product.id != productID))
   }
   return (
     <TableContainer>
@@ -52,7 +52,7 @@ export default function UserList(params) {
               <Td>{productList.price}</Td>
               <Td>
                 <Button me={4} bg={"green.400"}>
-                  <Link as={ReachLink} to={`/products/${productList.id}`}>
+                  <Link as={ReachLink} to={`/product/${productList.id}`}>
                     Edit
                   </Link>
                 </Button>{" "}
